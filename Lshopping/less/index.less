@@ -1,0 +1,237 @@
+//头部
+.m_header {
+
+  .header_top {
+    height: 49px;
+    background-color: #ff841d;
+    position: relative;
+
+    //左边logo
+    .header_logo {
+      float: left;
+      margin-left: 29/75rem;
+      padding: 11px;
+      height: 100%;
+
+        img {
+          display: block;
+          height: 27px;
+        }
+
+      }
+
+    }
+    //右边下载
+    .header_app {
+      float: right;
+      margin-right: 25/75rem;
+      padding: 11px;
+      height: 100%;
+
+      img {
+        display: block;
+        height: 27px;
+      }
+
+    }
+
+  //搜索框
+  .header_search {
+    background-color: #fff;
+    height: 49/75rem;
+    padding: 9/75rem;
+
+    input {
+      height: 29/75rem;
+      border-radius: 999px;
+      float: left;
+    }
+    input[type="search"] {
+      width: 90%;
+      padding-left: 22/75rem;
+      border: none;
+      background: #f1f1f1;
+      font-size: 12/75rem;
+      padding-right: 50px;
+    }
+    input[type="button"] {
+      background-color: #ff841d;
+      width: 10%;
+      border: none;
+    }
+
+  }
+
+}
+
+//导航栏
+.m_nav {
+  margin-top: 12/75rem;
+  padding: 17/75rem 9/75rem;
+  background-color: #fff;
+
+  ul {
+    margin: 0 auto;
+
+    li {
+
+      width: 25%;
+      float: left;
+
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 49/75rem;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 12/75rem;
+        text-align: center;
+        height: 40/75rem;
+        line-height: 40/75rem;
+      }
+
+    }
+    & .hide {
+      display: none; 
+    }
+
+  }
+
+}
+
+//主体内容上推荐区块
+.list_title {
+  height: 45/75rem;
+  background-image: linear-gradient(#ffaf47, #ff9000);
+  color: #fff;
+
+  .se_left {
+    float: left;
+    font-size: 19/75rem;
+    height: 100%;
+    line-height: 45/75rem;
+    padding-left: 17/75rem;
+  }
+  .se_right {
+    float: right;
+    font-size: 29/75rem;
+    padding-right: 17/75rem;
+  }
+
+}
+
+//主体商品列表
+.m_product {
+  background-color: #fff;
+  text-align: left;
+  font-size: 14/75rem;
+  max-width: 960px;
+  margin: 0 auto;
+
+  ul {
+    
+    li {
+      padding: 17/75rem 9/75rem;
+      border-bottom: 1px solid #ccc ;
+      position: relative;
+
+      a {
+        display: block;
+        width: 100%;
+
+        .pic {
+          float: left;
+          width: 90/75rem;
+        }
+        .info {
+          width: 100%;
+          // overflow: hidden;
+          padding-left: 109/75rem;
+
+          .title {
+            // width: 100%;
+            font-size: 19/75rem;
+            min-height: 57/75rem;
+            line-height: 22/75rem;
+
+            span {
+              color: #ff9000;
+              padding-left: 7/75rem;
+            }
+          }
+          .other {
+            margin-top: 17/75rem;
+
+            .date {
+              float: left;
+            }
+            .message {
+              float: right;
+              margin-right: 47/75rem;
+            }
+
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+}
+
+.more {
+  text-align: center;
+
+  a {
+    display: block;
+    line-height: 29px;
+    background: #F4F4F4;
+    text-decoration: none;
+    font-size: 14px;
+    background-image: linear-gradient(#ffffff, #f4f4f4);
+    margin: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+  }
+
+}
+
+.m_footer {
+
+
+  .footer_top {
+    background: #efefef;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 25px;
+    clear: both;
+
+    a {
+      box-sizing: border-box;
+      float: left;
+      font-size: 14px;
+      border-right: 1px solid #c4c4c4;
+      text-align: center;
+      width: 30%;
+    }
+
+  }
+  .footer_bottom {
+    margin-top: 25px;
+    font-size: 12/75rem;
+    text-align: center;
+
+    p {
+      color: #777;
+    }
+  }
+
+}

@@ -1,14 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>慢慢买</title>
+
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+
 </head>
+
 <body>
-  
-  
+
+  <!-- 头部+搜索栏 -->
+  <div class="m_header">
+
+    <!-- 头部 -->
+    <div class="header_top">
+      <!-- 左边logo -->
+      <div class="header_logo clearfix">
+        <a href="index.html">
+          <img src="images/header_logo.png" alt="" title="慢慢买">
+        </a>
+      </div>
+
+      <!-- 右边下载 -->
+      <div class="header_app">
+        <a href="javascript:;">
+          <img src="images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="header_search">
+      <form action="#" class="search">
+        <input type="search" name="search_txt" placeholder="请输入你想比价的商品">
+        <input type="button" value="搜索">
+      </form>
+    </div>
+
+  </div>
+
+  <!-- 导航栏 -->
+  <div class="m_nav">
+    <ul class="clearfix">
+      <!-- 挖个坑，获取导航栏数据填坑 -->
+    </ul>
+  </div>
+
+  <!-- 主体内容上推荐区块 -->
+  <section id="recommon" class="list_title">
+    <div class="se_left">
+      <p>超值折扣推荐</p>
+    </div>
+    <div class="se_right">
+      <span class="fa fa-angle-double-right"></span>
+    </div>
+  </section>
+
+  <div class="m_body">
+
+    <!-- 产品列表 -->
+    <div class="m_product">
+      <ul>
+        <!-- 挖个坑，获取产品信息填坑 -->
+      </ul>
+    </div>
+
+    <div class="more">
+
+      <a href="moneyctrl.html">更多优惠信息 >></a>
+
+    </div>
+
+  </div>
+
+  <!-- 底部上品牌排行区块 -->
+  <section id="recommon" class="list_title">
+    <div class="se_left">
+      <p>品牌排行</p>
+    </div>
+    <div class="se_right">
+      <span class="fa fa-angle-double-right"></span>
+    </div>
+  </section>
+
+  <div class="m_footer">
+
+    <div class="footer_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width: 40%; border: 0;">
+        <span class="fa fa-chevron-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+
+
+
+  <!-- 导航栏模板 -->
+  <script type="text/html" id="navTpl">
+
+    {{ each result v i }}
+    <li class="{{ i > 7 ? 'hide' : '' }}" id="{{ i == 7 ? 'show' : '' }}">
+      <a href="{{ v.titlehref }}">
+        {{@ v.img }}
+        <p>{{ v.name }}</p>
+      </a>
+      </div>
+      {{ /each }}
+
+  </script>
+
+  <!-- 产品列表模板 -->
+  <script type="text/html" id="productTpl">
+
+    {{ each result v i }}
+    <li class="clearfix">
+      <a href="moneyproduct.html?productid={{ v.productId }}">
+        <div class="pic">
+          <img src="{{ v.productImg2 }}" alt="{{ v.productName }}">
+        </div>
+        <div class="info">
+          <div class="title">
+            {{ v.productName }}
+            <br>
+            <span class="price">&yen;{{ v.productPinkage }}</span>
+          </div>
+          <div class="other">
+            <span class="date">{{ v.productFrom }} | 10-25 14:10</span>
+            <span>
+              <div class="message">
+                <span class="fa fa-commenting-o"></span>
+                <span>{{ v.productComCount.match(/\d/)[0] }}</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    {{ /each }}
+
+  </script>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template.js"></script>
+  <script src="lib/flexible.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/index.js"></script>
+
 
 </body>
+
 </html>
