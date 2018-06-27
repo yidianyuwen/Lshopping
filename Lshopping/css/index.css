@@ -1,28 +1,3 @@
-.m_header .header_top {
-  height: 49px;
-  background-color: #ff841d;
-  position: relative;
-}
-.m_header .header_top .header_logo {
-  float: left;
-  margin-left: 0.38666667rem;
-  padding: 11px;
-  height: 100%;
-}
-.m_header .header_top .header_logo img {
-  display: block;
-  height: 27px;
-}
-.m_header .header_app {
-  float: right;
-  margin-right: 0.33333333rem;
-  padding: 11px;
-  height: 100%;
-}
-.m_header .header_app img {
-  display: block;
-  height: 27px;
-}
 .m_header .header_search {
   background-color: #fff;
   height: 0.65333333rem;
@@ -92,53 +67,59 @@
   font-size: 0.38666667rem;
   padding-right: 0.22666667rem;
 }
-.m_product {
+.m_body .m_product {
   background-color: #fff;
   text-align: left;
   font-size: 0.18666667rem;
   max-width: 960px;
   margin: 0 auto;
 }
-.m_product ul li {
+.m_body .m_product ul li {
   padding: 0.22666667rem 0.12rem;
   border-bottom: 1px solid #ccc ;
   position: relative;
 }
-.m_product ul li a {
+.m_body .m_product ul li a {
   display: block;
-  width: 100%;
 }
-.m_product ul li a .pic {
+.m_body .m_product ul li a .pic {
   float: left;
-  width: 1.2rem;
+  width: 1.42666667rem;
+  height: 1.42666667rem;
+  overflow: hidden;
 }
-.m_product ul li a .info {
+.m_body .m_product ul li a .pic img {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.m_body .m_product ul li a .info {
   width: 100%;
   padding-left: 1.45333333rem;
 }
-.m_product ul li a .info .title {
+.m_body .m_product ul li a .info .title {
   font-size: 0.25333333rem;
   min-height: 0.76rem;
   line-height: 0.29333333rem;
 }
-.m_product ul li a .info .title span {
+.m_body .m_product ul li a .info .title span {
   color: #ff9000;
   padding-left: 0.09333333rem;
 }
-.m_product ul li a .info .other {
+.m_body .m_product ul li a .info .other {
   margin-top: 0.22666667rem;
 }
-.m_product ul li a .info .other .date {
+.m_body .m_product ul li a .info .other .date {
   float: left;
 }
-.m_product ul li a .info .other .message {
+.m_body .m_product ul li a .info .other .message {
   float: right;
   margin-right: 0.62666667rem;
 }
-.more {
+.m_body .more {
   text-align: center;
 }
-.more a {
+.m_body .more a {
   display: block;
   line-height: 29px;
   background: #F4F4F4;
@@ -148,29 +129,4 @@
   margin: 12px;
   border: 1px solid #dddddd;
   border-radius: 5px;
-}
-.m_footer .footer_top {
-  background: #efefef;
-  border-top: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-  height: 34px;
-  line-height: 34px;
-  margin-top: 25px;
-  clear: both;
-}
-.m_footer .footer_top a {
-  box-sizing: border-box;
-  float: left;
-  font-size: 14px;
-  border-right: 1px solid #c4c4c4;
-  text-align: center;
-  width: 30%;
-}
-.m_footer .footer_bottom {
-  margin-top: 25px;
-  font-size: 0.16rem;
-  text-align: center;
-}
-.m_footer .footer_bottom p {
-  color: #777;
 }

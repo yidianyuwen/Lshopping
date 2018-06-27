@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>折扣详情</title>
+
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/moneyproduct.css">
+
+</head>
+
+<body>
+
+  <!-- 头部 -->
+  <div class="header_top">
+    <!-- 左边back -->
+    <div class="header_back clearfix">
+      <a href="javascript:history.go(-1)">
+        <span class="fa fa-angle-left"></span>
+      </a>
+    </div>
+
+    <!-- 右边下载 -->
+    <div class="header_app">
+      <a href="javascript:;">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+
+    <div class="header_title">
+      <h2>国内折扣</h2>
+    </div>
+
+  </div>
+
+  <!-- 主体内容商品详情 -->
+  <div class="container">
+
+    <div class="product_content">
+
+      <!-- 挖个坑，获取商品数据填坑 -->
+
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="m_footer">
+
+      <div class="footer_top">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="#" style="width: 40%; border: 0;">
+          <span class="fa fa-chevron-up"></span>
+          返回顶部
+        </a>
+      </div>
+      <div class="footer_bottom">
+        <p>
+          <a href="javascript:;" style="color: Red;">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
+
+    </div>
+
+    <!-- 商品数据模板 -->
+    <script type="text/html" id="productTpl">
+
+      {{ each result v i }}
+      <h3 class="title">{{ v.productName }}</h3>
+
+      <div class="info">
+        <span class="from">{{ v.productFrom }}</span>
+        <span class="date" style="margin-right: 4px;">{{ v.productTime }}</span>
+        <span class="author">{{ v.productTips }}</span>
+      </div>
+
+      <div class="product_detil clearfix">
+        <div class="product_pic">
+          {{@ v.productImgSm }}
+        </div>
+        <div class="product_notice">
+          <!--内容开始-->
+          <p>{{ v.productInfo }}</p>
+          <p>{{ v.productInfo1 }}</p>
+          <p>{{ v.productInfo2 }}</p>
+          <p>{{ v.productInfo4 }}</p>
+          <p>
+            {{@ v.productImgLg }}
+          </p>
+          <p></p>
+          <!--内容结束-->
+        </div>
+      </div>
+
+      <div class="product_city">
+        <div class="form">
+          <ul>
+            {{@ v.productCity }}
+          </ul>
+        </div>
+      </div>
+
+      <div class="product_link">
+        <a href="redirect.aspx?tjid=521575&amp;y=cu_share" target="_blank">
+          <i class="icon-gobuy"></i>
+          前往购买
+        </a>
+      </div>
+
+  </div>
+
+  <div style="text-align: center; margin: 20px 10px;">
+    <img src="images/mmbweixin2.png" style="width: 100%; height: auto;">
+  </div>
+
+  <!-- 评论区 -->
+  <div class="product_comment">
+
+      {{@ v.productComment }}
+      
+  </div>
+  {{ /each }}
+
+  </script>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template.js"></script>
+  <script src="lib/flexible.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/moneyproduct.js"></script>
+
+</body>
+
+</html>

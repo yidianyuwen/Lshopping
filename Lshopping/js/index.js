@@ -17,7 +17,7 @@ $(function () {
   //渲染产品列表
   Route.getmoneyctrl (function (pageid) {
 
-    console.log(pageid);
+    // console.log(pageid);
     $(".m_product ul").html(template("productTpl", pageid));
 
   });
