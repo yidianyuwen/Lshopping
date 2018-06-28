@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>分类页</title>
+
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/category.css">
+
+</head>
+
+<body>
+
+  <!-- 头部+搜索栏 -->
+  <div class="m_header">
+
+    <!-- 头部 -->
+    <div class="header_top">
+      <!-- 左边logo -->
+      <div class="header_logo clearfix">
+        <a href="index.html">
+          <img src="images/header_logo.png" alt="" title="慢慢买">
+        </a>
+      </div>
+
+      <!-- 右边下载 -->
+      <div class="header_app">
+        <a href="javascript:;">
+          <img src="images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="header_search">
+      <form action="#" class="search">
+        <input type="search" name="search_txt" placeholder="请输入你想比价的商品">
+        <input type="button" value="搜索">
+      </form>
+    </div>
+
+  </div>
+
+  <div class="category">
+
+    <ul class="category_title">
+
+      <!-- 挖个坑，获取分类信息填坑，坑里还有一个小坑，详细分类 -->
+
+    </ul>
+
+  </div>
+
+  <!-- 公共底部 -->
+  <div class="m_footer">
+
+    <div class="footer_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width: 40%; border: 0;">
+        <span class="fa fa-chevron-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+
+  <!-- 分类数据模板 -->
+  <script type="text/html" id="titleTpl">
+
+    {{ each result v i }}
+    <li>
+      <!-- 分类标题 -->
+      <a href="javascript:;" data-title-id="{{ v.titleId }}" style="background-image: url(http://www.zuyushop.com/wap/images/arrow1.gif)">{{ v.title }}</a>
+      <!-- 分类下详细分类 -->
+      <ul class="category_content clearfix">
+
+      </ul>
+
+    </li>
+    {{ /each }}
+
+  </script>
+
+  <!-- 详细分类数据模板 -->
+  <script type="text/html" id="contentTpl">
+
+    {{ each result v i }}
+    <li>
+      <a href="productlist.html?categoryid={{ v.categoryId }}&category={{ v.category }}&pageid=1" data-content-id="{{ v.categoryId }}">{{ v.category }}</a>
+    </li>
+    {{ /each }}
+
+  </script>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template.js"></script>
+  <script src="lib/flexible.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/category.js"></script>
+
+</body>
+
+</html>
