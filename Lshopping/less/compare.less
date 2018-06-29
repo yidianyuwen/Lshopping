@@ -1,0 +1,239 @@
+@charset 'utf-8';
+
+html,
+body {
+  background-color: #fff;
+}
+
+//主体内容上面包屑区块
+.list_title {
+  height: 47/75rem;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 47/75rem;
+  padding-left: 9/75rem;
+  font-size: 12/75rem;
+
+  .se_left {
+    float: left;
+    font-size: 19/75rem;
+    height: 100%;
+    line-height: 47/75rem;
+    padding-left: 2/75rem;
+
+    .bread_crumb {
+
+      li {
+        color: #000;
+        float: left;
+        margin-left: 9/75rem;
+      }
+
+    }
+
+  }
+  .se_right {
+    float: right;
+    font-size: 29/75rem;
+    padding-right: 19/75rem;
+    margin-top: 2/75rem;
+
+    .select {
+      display: block;
+      height: 29/75rem;
+      background-color: #d0d0d0;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+      border-bottom: 1px solid #bababa;
+      box-shadow: 0 1px 2px #888;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 29/75rem;
+      overflow: hidden;
+      border: none;
+      padding: 0 16px;
+      margin-top: 4px;
+    }
+
+  }
+
+}
+
+//主体比价信息
+.product_compare {
+  
+  //比价的商品
+  .compare_product {
+    position: relative;
+
+    .product_name {
+      text-align: center;
+      font-size: 19/75rem;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 17/75rem;
+      height: 107/75rem;
+    }
+    .product_pic {
+      display: block;
+      width: 190/75rem;
+      height: 190/75rem;
+      margin: 0px auto;
+
+      img {
+        width: 170/75rem;
+        vertical-align: middle;
+      }
+
+    }
+    .collect {
+      float: right;
+      margin-right: 24px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+
+      a {
+        color: #000;
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+    }
+
+  }
+  //商品相关选项卡
+  .tab {
+    width: 100%;
+    margin-top: 21/75rem;
+    height: 45/75rem;
+    line-height: 45/75rem;
+    font-size: 17/75rem;
+    overflow: hidden;
+    background-color: #ffbb00;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+    border-top: solid 1px #c14d00;
+    border-bottom: 1px solid #c14d00;
+
+    ul {
+      width: 100%;
+
+      li {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        height: 45/75rem;
+        text-align: center;
+
+        a {
+          color: #fff;
+          display: block;
+          height: 45/75rem;
+          width: 100%;
+        }
+
+      }
+      .cur {
+        background-color: #ffbb00;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+      }
+      .mtab {
+        border-left: solid 1px #c14d00;
+        border-right: solid 1px #c14d00;
+      }
+
+    }
+
+  }
+  //比价结果
+  .bjShop {
+
+    table {
+      margin-top: 14/75rem;
+      font-size: 19/75rem;
+
+      td {
+        line-height: 22/75rem;
+      }
+      .p_pic {
+        text-align: center;
+        vertical-align: middle;
+      }
+      
+    }
+
+  }
+
+  //评价
+  .product_comment {
+
+    .comment_tit {
+      border-top: 4px solid #7a7a7a;
+      margin-top: 17/75rem;
+
+      p {
+        height: 45/75rem;
+        line-height: 45/75rem;
+        text-align: center;
+        overflow: hidden;
+        background: #dbdbdb;
+        font-size: 15/75rem;
+        border-top: 1px solid #fff;
+      }
+
+    }
+    .comment_list {
+
+      ul {
+
+        li {
+          font-size: 12/75rem;
+          color: #666;
+          padding: 9/75rem;
+          // padding-bottom: 0;
+          line-height: 19/75rem;
+          margin-top: 4/75rem;
+          border-bottom: 1px solid #ccc;
+
+          p {
+            color: #000;
+            line-height: 22/75rem;
+            padding-top: 7/75rem;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  
+  //更多信息
+  .more {
+    text-align: center;
+
+    a {
+      display: block;
+      line-height: 29px;
+      background: #F4F4F4;
+      text-decoration: none;
+      font-size: 14px;
+      background-image: linear-gradient(#ffffff, #f4f4f4);
+      margin: 12px;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+    }
+
+  }
+
+}
+
+.red {
+  color: #d10311;
+  text-align: right;
+  padding-right: 15px;
+}

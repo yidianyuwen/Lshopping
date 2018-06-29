@@ -1,0 +1,174 @@
+@charset 'utf-8';
+html,
+body {
+  background-color: #fff;
+}
+.list_title {
+  height: 0.62666667rem;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.62666667rem;
+  padding-left: 0.12rem;
+  font-size: 0.16rem;
+}
+.list_title .se_left {
+  float: left;
+  font-size: 0.25333333rem;
+  height: 100%;
+  line-height: 0.62666667rem;
+  padding-left: 0.02666667rem;
+}
+.list_title .se_left .bread_crumb li {
+  color: #000;
+  float: left;
+  margin-left: 0.12rem;
+}
+.list_title .se_right {
+  float: right;
+  font-size: 0.38666667rem;
+  padding-right: 0.25333333rem;
+  margin-top: 0.02666667rem;
+}
+.list_title .se_right .select {
+  display: block;
+  height: 0.38666667rem;
+  background-color: #d0d0d0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 1px 2px #888;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 0.38666667rem;
+  overflow: hidden;
+  border: none;
+  padding: 0 16px;
+  margin-top: 4px;
+}
+.product_compare .compare_product {
+  position: relative;
+}
+.product_compare .compare_product .product_name {
+  text-align: center;
+  font-size: 0.25333333rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0.22666667rem;
+  height: 1.42666667rem;
+}
+.product_compare .compare_product .product_pic {
+  display: block;
+  width: 2.53333333rem;
+  height: 2.53333333rem;
+  margin: 0px auto;
+}
+.product_compare .compare_product .product_pic img {
+  width: 2.26666667rem;
+  vertical-align: middle;
+}
+.product_compare .compare_product .collect {
+  float: right;
+  margin-right: 24px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.product_compare .compare_product .collect a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.product_compare .tab {
+  width: 100%;
+  margin-top: 0.28rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.22666667rem;
+  overflow: hidden;
+  background-color: #ffbb00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+  border-top: solid 1px #c14d00;
+  border-bottom: 1px solid #c14d00;
+}
+.product_compare .tab ul {
+  width: 100%;
+}
+.product_compare .tab ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  height: 0.6rem;
+  text-align: center;
+}
+.product_compare .tab ul li a {
+  color: #fff;
+  display: block;
+  height: 0.6rem;
+  width: 100%;
+}
+.product_compare .tab ul .cur {
+  background-color: #ffbb00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+}
+.product_compare .tab ul .mtab {
+  border-left: solid 1px #c14d00;
+  border-right: solid 1px #c14d00;
+}
+.product_compare .bjShop table {
+  margin-top: 0.18666667rem;
+  font-size: 0.25333333rem;
+}
+.product_compare .bjShop table td {
+  line-height: 0.29333333rem;
+}
+.product_compare .bjShop table .p_pic {
+  text-align: center;
+  vertical-align: middle;
+}
+.product_compare .product_comment .comment_tit {
+  border-top: 4px solid #7a7a7a;
+  margin-top: 0.22666667rem;
+}
+.product_compare .product_comment .comment_tit p {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  overflow: hidden;
+  background: #dbdbdb;
+  font-size: 0.2rem;
+  border-top: 1px solid #fff;
+}
+.product_compare .product_comment .comment_list ul li {
+  font-size: 0.16rem;
+  color: #666;
+  padding: 0.12rem;
+  line-height: 0.25333333rem;
+  margin-top: 0.05333333rem;
+  border-bottom: 1px solid #ccc;
+}
+.product_compare .product_comment .comment_list ul li p {
+  color: #000;
+  line-height: 0.29333333rem;
+  padding-top: 0.09333333rem;
+}
+.product_compare .more {
+  text-align: center;
+}
+.product_compare .more a {
+  display: block;
+  line-height: 29px;
+  background: #F4F4F4;
+  text-decoration: none;
+  font-size: 14px;
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+  margin: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.red {
+  color: #d10311;
+  text-align: right;
+  padding-right: 15px;
+}

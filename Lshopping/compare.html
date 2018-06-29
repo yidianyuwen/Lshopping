@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+
+  <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/compare.css">
+
+</head>
+
+<body>
+
+  <!-- 头部+搜索栏 -->
+  <div class="m_header">
+
+    <!-- 头部 -->
+    <div class="header_top">
+      <!-- 左边logo -->
+      <div class="header_logo clearfix">
+        <a href="javascript:history.go(-1)">
+          <img src="images/header_logo.png" alt="" title="慢慢买">
+        </a>
+      </div>
+
+      <!-- 右边下载 -->
+      <div class="header_app">
+        <a href="javascript:;">
+          <img src="images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="header_search">
+      <form action="#" class="search">
+        <input type="search" name="search_txt" placeholder="请输入你想比价的商品">
+        <input type="button" value="搜索">
+      </form>
+    </div>
+
+  </div>
+
+  <!-- 主体内容上面包屑区块 -->
+  <section id="recommon" class="list_title">
+    <div class="se_left">
+      <ul class="bread_crumb clearfix">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li> &gt; </li>
+        <li>
+          <a href="category.html">全部分类</a>
+        </li>
+        <li> &gt; </li>
+        <li class="bread_crumb_self">
+          <!-- 挖个小坑，获取地址栏详细分类名填坑 -->
+        </li>
+      </ul>
+    </div>
+    <div class="se_right">
+      <a href="javascript:;" class="select">筛选</a>
+    </div>
+  </section>
+
+
+  <div class="product_compare">
+
+    <!-- 比价信息 -->
+    <!-- 比价的商品 -->
+    <div class="compare_product">
+      <!-- 挖个坑，获取商品信息填坑 -->
+    </div>
+
+    <!-- 商品相关选项卡 -->
+    <div class="tab">
+      <ul class="clearfix">
+        <li class="cur">
+          <a href="#">比价购买</a>
+        </li>
+        <li class="mtab">
+          <a href="#">产品参数</a>
+        </li>
+        <li class="">
+          <a href="#" class="">评价(2322)</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 比价结果 -->
+    <!-- 后台写好了 -->
+    <div class="bjShop">
+      <!-- 挖个坑 -->
+    </div>
+
+    <!-- 评价 -->
+    <div class="product_comment">
+
+      <div class="comment_tit">
+        <p>网友评价</p>
+      </div>
+      <div class="comment_list">
+        <ul>
+          <!-- 挖个坑，获取评论信息填坑 -->
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="more">
+
+      <a href="javascript:;">查看更多评价 >></a>
+
+    </div>
+
+  </div>
+
+
+  <div class="m_footer">
+
+    <div class="footer_top">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" style="width: 40%; border: 0;">
+        <span class="fa fa-chevron-up"></span>
+        返回顶部
+      </a>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+
+  <!-- 面包屑模板 -->
+  <script type="text/html " id="selfTpl">
+
+    {{ each result v i }}
+    <a href="javascript:; ">{{ v.category }}</a>
+    {{ /each }}
+
+  </script>
+
+  <!-- 比价的商品信息模板 -->
+  <script type="text/html" id="productTpl">
+
+    {{ each result v i }}
+    <div class="product_name">{{ v.productName }}</div>
+    <div class="product_pic">
+      {{@ v.productImg }}
+    </div>
+    <div class="collect">
+      <a href="javascript:;">
+        <img src="http://www.zuyushop.com/wap/images/sc.jpg" width="39" height="39">
+      </a>
+    </div>
+    {{ /each }}
+
+  </script>
+
+  <!-- 后台加的比价结果 -->
+  <script type="text/html" id="bjshopTpl">
+
+    {{ each result v i }} {{@ v.bjShop }} {{ /each }}
+
+  </script>
+
+  <!-- 评论数据模板 -->
+  <script type="text/html" id="commentTpl">
+
+    {{ each result v i }}
+    <li>
+      <div class="clearfix">
+        <span class="pull-left comment-name">{{ v.comName }}</span>
+        <span class="pull-right comment-time">{{ v.comTime }}</span>
+      </div>
+      <div class="clearfix">
+        <span class="pull-right comment-from">{{ v.comFrom }}</span>
+      </div>
+      <div class="clearfix">
+        <p>{{ v.comContent }}</p>
+      </div>
+    </li>
+    {{ /each }}
+
+  </script>
+
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template.js"></script>
+  <script src="lib/flexible.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/compare.js"></script>
+
+
+</body>
+
+</html>
