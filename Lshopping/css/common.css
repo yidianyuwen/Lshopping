@@ -30,6 +30,30 @@ i {
 body {
   background-color: #f1f1f1;
 }
+.m_header .header_search {
+  background-color: #fff;
+  height: 0.65333333rem;
+  padding: 0.12rem;
+}
+.m_header .header_search input {
+  height: 0.38666667rem;
+  border-radius: 999px;
+  float: left;
+}
+.m_header .header_search input[type="search"] {
+  width: 90%;
+  padding-left: 0.29333333rem;
+  border: none;
+  background: #f1f1f1;
+  font-size: 0.16rem;
+  padding-right: 50px;
+}
+.m_header .header_search input[type="button"] {
+  color: #fff;
+  background-color: #ff841d;
+  width: 10%;
+  border: none;
+}
 .header_top {
   height: 49px;
   background-color: #ff841d;

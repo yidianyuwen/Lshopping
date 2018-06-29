@@ -10,7 +10,7 @@ $(function () {
       var $that = $(this);
       // console.log(that);
       var id = $that.data("title-id");
-      console.log(id);
+      // console.log(id);
 
       $that.parent().find('ul').toggleClass('hide');
 
@@ -19,7 +19,7 @@ $(function () {
 
         Route.getcategory(id, function (content) {
 
-          console.log(content, $that); 
+          // console.log(content, $that); 
           $($that).parent().find(".category_content").html(template("contentTpl", content));
   
         });

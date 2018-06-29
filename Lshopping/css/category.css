@@ -3,29 +3,38 @@ html,
 body {
   background-color: #fff;
 }
-.m_header .header_search {
-  background-color: #fff;
-  height: 0.65333333rem;
-  padding: 0.12rem;
+/**
+.m_header {
+
+  //搜索框
+  .header_search {
+    background-color: #fff;
+    height: 49/75rem;
+    padding: 9/75rem;
+
+    input {
+      height: 29/75rem;
+      border-radius: 999px;
+      float: left;
+    }
+    input[type="search"] {
+      width: 90%;
+      padding-left: 22/75rem;
+      border: none;
+      background: #f1f1f1;
+      font-size: 12/75rem;
+      padding-right: 50px;
+    }
+    input[type="button"] {
+      background-color: #ff841d;
+      width: 10%;
+      border: none;
+    }
+
+  }
+
 }
-.m_header .header_search input {
-  height: 0.38666667rem;
-  border-radius: 999px;
-  float: left;
-}
-.m_header .header_search input[type="search"] {
-  width: 90%;
-  padding-left: 0.29333333rem;
-  border: none;
-  background: #f1f1f1;
-  font-size: 0.16rem;
-  padding-right: 50px;
-}
-.m_header .header_search input[type="button"] {
-  background-color: #ff841d;
-  width: 10%;
-  border: none;
-}
+*/
 /* 分类标题 */
 .category {
   background: #ededed;

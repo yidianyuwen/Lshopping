@@ -1,0 +1,88 @@
+@charset 'utf-8';
+.list_title {
+  height: 0.76rem;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.76rem;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.list_title .se_left {
+  float: left;
+  font-size: 0.25333333rem;
+  height: 100%;
+  line-height: 0.76rem;
+  padding-left: 0.25333333rem;
+}
+.list_title .se_left .bread_crumb li {
+  color: #000;
+  float: left;
+  margin-left: 0.18666667rem;
+}
+.list_title .se_right {
+  float: right;
+  font-size: 0.38666667rem;
+  padding-right: 0.22666667rem;
+}
+.list_title .se_right .select {
+  display: block;
+  height: 0.53333333rem;
+  background-color: #d0d0d0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 1px 2px #888;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 0.53333333rem;
+  overflow: hidden;
+  border: none;
+  padding: 0 16px;
+  margin-top: 4px;
+}
+.product_list {
+  background-color: #fff;
+}
+.product_list ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.product_list ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.product_list ul li a .left_pic {
+  float: left;
+  width: 2.09333333rem;
+}
+.product_list ul li a .right_info {
+  width: 100%;
+  font-size: 14px;
+  line-height: 0.4rem;
+  padding-left: 2.09333333rem;
+}
+.product_list ul li a .right_info .right_tit {
+  width: 100%;
+  color: #333333;
+  line-height: 0.29333333rem;
+  min-height: 1rem;
+}
+.product_list ul li a .right_info .right_price {
+  height: 0.46666667rem;
+}
+.product_list ul li a .right_info .right_price span {
+  font-size: 17px;
+  color: #ea3900;
+  vertical-align: middle;
+}
+.product_list ul li a .right_info .right_evaluate {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.product_list ul li a .right_info .right_evaluate em {
+  font-style: normal;
+  margin-right: 10px;
+}
